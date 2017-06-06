@@ -26,8 +26,6 @@ var sortedRobots = robots.map(function (robot) {
   return Object.assign({}, robot, {alliance: knownDecepticons.includes(robot.name) ? 'decepticon' : 'autobot'})
 })
 
-const even = [0, 2, 4, 6, 8, 10]
-
 var coloredZebraStripes = zebraStripes.map(function (stripe) {
   return Object.assign({}, stripe, {color: zebraStripes.indexOf(stripe) % 2 == 0 ? 'black' : 'white'})
 })
